@@ -11,9 +11,17 @@
             margin: 0;
             padding: 0;
         }
-        h1,h2,h3,h4,h5,h6{
-            font-size: 16px; /* 글자의 크기 */
-            font-weight: normal; /* 글자의 두께 */
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 16px;
+            /* 글자의 크기 */
+            font-weight: normal;
+            /* 글자의 두께 */
         }
 
         h1 {
@@ -29,6 +37,22 @@
         h3 {
             background-color: #e45353;
         }
+
+        h3.행심 {
+            color: aquamarine;
+            /* 글자의 색 */
+        }
+
+        h3.행순 {
+            background-color: #fbff00;
+        }
+
+        p {
+            background-color: bisque;
+            width: 400px; /* 영역의 넓이 */
+        }
+        p:hover{background-color: rgb(25, 70, 219);
+        transition: 0.3s;  /* 1s초=1000ms */}
     </style>
 </head>
 
@@ -39,10 +63,13 @@
     <시작태그>내용</종료태그> -->
     <h1>제목입니당1</h1>
     <h2>제목입니당2</h2>
-    <h3>제목입니당3</h3>
+    <h3 class="행심">제목입니당3</h3>
+    <h3 class="행순">제목입니당3_반갑습니다</h3>
     <h4>제목입니당4</h4>
     <h5>제목입니당5</h5>
     <h6>제목입니당6</h6>
+
+    <p>문단을 나타내는 태그</p>
 
 </body>
 
