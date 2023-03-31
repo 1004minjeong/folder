@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>야호</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>사용자로부터 입력받기</h2>
+    <div class="첫째">
+        <form action="#">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="my-name">
+            <br><br>
+            <label for="age">나이</label>
+            <input type="number" value="0" id="age" name="my-age">
+            <br><br>
+            <button type="submit">제출</button>
+            <button type="reset">초기화</button>
+        </form>
+
+    </div>
+    
+    <div class="둘째">
+        <form action="#">
+            <label for="txt">TEXT</label>
+            <input type="text" id="txt" placeholder="5자 이하" maxlength="5">
+            <br><br>
+            <label for="pwd">PASSWORD</label>
+            <input type="password" id="pwd" placeholder="4자 이상" minlength="4">
+            <br>
+            <button type="submit">제출</button>
+        </form>
+
+    </div>
+    <div class="셋째">
+        <label for="num">NUMBER</label>
+        <input type="number" id="num" min="0" max="10">
+        <label for="rg">RANGE</label>
+        <input type="range" id="rg" max="100" step="20">
+        <label for="dt">DATE</label>
+        <input type="date" min="2020-01-01" max="2030-12-31">
+    </div>
+    
+    <div class="넷째">
+        <h3>SELECT,OPTION 태그</h3>
+        <label for="lang">언어</label>
+         <select name="" id="">
+            <option value="">-- 언어 선택 --</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javaScript">자바스크립트</option>
+            <option value="React">리액트</option>
+         </select>
+    </div>
+
+    <div class="다섯째">
+        <fieldset>
+            <legend>성별</legend>
+            <input type="radio" name="gender" checked>남자
+            <input type="radio" name="gender">여자
+        </fieldset>
+        <fieldset>
+            <legend>지역선택</legend>
+            <input type="radio" name="area" checked>서울
+            <input type="radio" name="area" >경기
+            <input type="radio" name="area" >인천
+            <input type="radio" name="area" >부산
+        </fieldset>
+        <fieldset>
+            <legend>좋아하는 과인 모두 선택</legend>
+            <input type="checkbox" name="fruit" checked=>사과
+            <input type="checkbox" name="fruit" >감
+            <input type="checkbox" name="fruit" >배
+            <input type="checkbox" name="fruit" >수박
+            <input type="checkbox" name="fruit" >토마토
+        </fieldset>
+    </div>
+
+
+</body>
+
+</html>

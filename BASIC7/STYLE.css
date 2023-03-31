@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.첫째,
+.둘째,
+.셋째,
+.넷째,
+.다섯째 {
+    margin-top: 20px;
+    border: 1px solid #222;
+    padding-bottom: 20px;
+}
