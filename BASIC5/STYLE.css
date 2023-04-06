@@ -1,0 +1,19 @@
+.one {
+   /*  one의 공간 :border + padding + width:  
+    margin은 one의 공간 밖의 영역*/
+    border: 2px solid skyblue;
+    padding: 20px; /* 나의 안쪽공간 */
+    width: 200px;
+    box-sizing: border-box; /* 넓이에 padding과 border를 표함시킴 */
+    margin: 20px; /* 나의 밖쪽공간 */
+}
+
+.two {
+    padding: 20px;
+    margin: 30px;
+    border: 1px solid rgb(174, 123, 199);
+}
+
+.three {
+    border: 1px solid rgb(211, 69, 81);
+}

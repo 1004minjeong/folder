@@ -1,0 +1,20 @@
+div {
+    background-color: rgb(23, 102, 248);
+
+}
+
+.인라인 {
+    background-color: rgb(162, 219, 124);
+    width: 300px;
+    height: 300px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
