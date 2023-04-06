@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.전체 {
+    background-color: #acd6c8;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* 넓이는 부모의 넓이를 따라감 */
+/* 높이는 자식의 높이를 따라감 */
+
+.전체 .자식1 {
+    width: 25%;
+    background-color: skyblue;
+    float: left;
+}
+
+.전체 .자식2 {
+    width: 25%;
+    background-color: lightcoral;
+    float: left;
+}
+
+.전체 .자식3 {
+    width: 25%;
+    background-color: lightgoldenrodyellow;
+    float: left;
+}
+
+.전체 .자식4 {
+    width: 25%;
+    background-color: lavender;
+    float: left;
+}
+
+.전체 .막내 {
+
+    background-color: blue;
+    clear: left;
+}
+
+
+.바닥 {
+    background-color: deepskyblue;
+    width: 1000px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+}
+
+.바닥 .자식 {
+    background-color: lightblue;
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+
+}
+
+
+.바닥 .막내 {
+    clear: both;
+}
+
+.바닥 .자식3 {
+    margin-right: 0;
+}
+
+.야호 {
+    background-color: aquamarine;
+    width: 1000px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.야호 .야아호 {
+    background-color: rgb(182, 127, 255);
+    margin-right: 2%;
+    float: left;
+    width: 32%;
+}
+.야호 .막내 {
+    clear: both;
+}

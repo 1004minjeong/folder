@@ -1,16 +1,74 @@
-@charset "UTF-8";
-
 * {
     margin: 0;
     padding: 0;
 }
 
-.첫째,
-.둘째,
-.셋째,
-.넷째,
-.다섯째 {
-    margin-top: 20px;
-    border: 1px solid #222;
-    padding-bottom: 20px;
+.아빠 .효자 {
+    clear: both;
+}
+
+.아빠 {
+    width: 1000px;
+    background-color: cadetblue;
+    border: 1px solid rgb(0, 255, 85);
+    /*padding: 상  오른쪽  아래  왼쪽 */
+    padding: 10px 20px 30px 40px;
+    /*padding: 상   좌우 아래  */
+    padding: 10px 20px 30px;
+    /*padding: 상하 좌우 */
+    padding: 10px 20px;
+    /*padding: 상하좌우 */
+    padding: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    margin: 30px auto 0;
+}
+
+.철수.아빠 .자식 {
+    background-color: deepskyblue;
+    width: 32%;
+    height: 100px;
+    float: left;
+    margin-right: 2%;
+}
+
+
+.철수.아빠 .자식3 {
+    margin-right: 0;
+}
+
+.칠수 .자식 {
+    background-color: rgb(247, 182, 236);
+    width: 23.5%;
+    float: left;
+    height: 100px;
+    margin-right: 2%;
+}
+
+.칠수.아빠 .자식4 {
+    margin-right: 0;
+    overflow: hidden;
+
+}
+
+.칠수 .자식4 object {
+    width: 100%;
+}
+
+.칠수 .자식2 {
+    overflow: hidden;
+}
+
+.칠수 .자식2 video {
+    width: 100%;
+}
+
+.칠수 .자식3 {
+    overflow: hidden;
+}
+
+.칠수 .자식3 img {
+    width: 100%;
 }

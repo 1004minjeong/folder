@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.아빠::after {
+    content: "";
+    /* after는 인라인요소이다.*/
+    clear: both;
+    display: block;
+}
+
+.아빠 {
+    background-color: cornflowerblue;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.아빠 .자식 {
+    background-color: deepskyblue;
+    width: 33.3333%;
+    float: left;
+    height: 100px;
+}
+
+.팔수 {
+    margin-top: 30px;
+}
+
+.팔수 .자식8 {
+    width: 45%;
+    background-color: deepskyblue;
+    float: left;
+    height: 100px;
+
+    float: left;
+}
+
+.팔수 .자식1 {
+    margin-right: 15%;
+}
