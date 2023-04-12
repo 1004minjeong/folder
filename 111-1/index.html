@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>롯데월드</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--  favicon -->
+
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header" class="clearfix">
+            <h1>
+                <a href="https://www.w3schools.com/tags/tag_li.asp" target="_blank">
+                    <img src="images/favicon/favicon-96x96.png" alt="롯데월드">
+                    <!-- alt의 역할
+                    src의 경로가 잘못된경우 대체문자역할
+                    웹접근성(누구든 웹을 사용할수있게함)을 위한 사용 -->
+                </a>
+            </h1>
+
+            <div class="nav">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">즐길거리</a>
+                        <ul class="submenu">
+                            <li><a href="#">subMenu1</a></li>
+                            <li><a href="#">subMenu2</a></li>
+                            <li><a href="#">subMenu3</a></li>
+                            <li><a href="#">subMenu4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">요금/우대혜택</a>
+                        <ul class="submenu">
+                            <li><a href="#">subMenu-1</a></li>
+                            <li><a href="#">subMenu-2</a></li>
+                            <li><a href="#">subMenu-3</a></li>
+                            <li><a href="#">subMenu-4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">참여프로그램</a>
+                        <ul class="submenu">
+                            <li><a href="#">subMenu-1</a></li>
+                            <li><a href="#">subMenu-2</a></li>
+                            <li><a href="#">subMenu-3</a></li>
+                            <li><a href="#">subMenu-4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">이용가이드</a>
+                        <ul class="submenu">
+                            <li><a href="#">subMenu-1</a></li>
+                            <li><a href="#">subMenu-2</a></li>
+                            <li><a href="#">subMenu-3</a></li>
+                            <li><a href="#">subMenu-4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">소통서비스</a>
+                        <ul class="submenu">
+                            <li><a href="#">submenu-1</a></li>
+                            <li><a href="#">submenu-2</a></li>
+                            <li><a href="#">submenu-3</a></li>
+                            <li><a href="#">submenu-4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- //nav -->
+
+        </div><!-- header -->
+
+        <div id="banner">
+            <div class="slideList">
+                <div class="slideImg">
+                    <h2>이미지1</h2>
+                    <img src="images/banner01.jpg" alt="크리스마스">
+                </div><!-- slideImg -->
+                <div class="slideImg">
+                    <h2>이미지2</h2>
+                    <img src="images/banner01.jpg" alt="크리스마스">
+                </div><!-- slideImg -->
+                <div class="slideImg">
+                    <h2>이미지3</h2>
+                    <img src="images/banner01.jpg" alt="크리스마스">
+                </div><!-- slideImg -->
+            </div><!-- slideList -->
+        </div><!-- banner -->
+        <div id="contetn1">
+            <div class="notice"></div><!-- notice -->
+            <div class="ad"></div><!-- ad -->
+        </div><!-- contetn1 -->
+
+    </div><!-- wrap -->
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js">
+    </script>
+    <script>
+        //menu
+        $(".nav>ul>li").mouseover(function () {
+            $(this).find(".submenu").stop().slideDown();
+        })
+        $(".nav>ul>li").mouseout(function () {
+            $(this).find(".submenu").stop().slideUp();
+        })
+
+        //banner
+        var currentIndex = 0;
+        //var 변수이름 = 값
+        //변수는 변하는 값이라는 의미
+        console.log(currentIndex)
+
+        //setInterval(할일,시간(1초)) --> 1초마다 할일이 실행
+        //setInterval(function(){},3000) --> 3초마다 할일이 실행
+        //if(조건문){조건이 만족하면 할일}else{조건이 만족하지 않으면 할일}
+
+        setInterval(function () {
+            if (currentIndex < 2) {
+                //1을더해라
+                currentIndex++;
+            } else {
+                //다시 0를 입력해라
+                currentIndex = 0;
+            }
+            
+            var slidePosition = currentIndex *(-378) + "px";
+            console.log(slidePosition)
+
+            //$(".slideList").animate({실행문},시간)
+            $(".slideList").animate({top:slidePosition},400)
+
+
+        }, 3000)
+    </script>
+
+</body>
+
+</html>
