@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바바</title>
+</head>
+
+<body>
+
+    <script>
+        var 민숙 = 5;
+        민숙++; //하나더하기
+        document.write(민숙 + '<br>') //6
+
+        민숙 = 민숙 + 2;
+        document.write(민숙 + '<br>') //8
+
+        민숙 += 4;
+        민숙 = 민숙 + 4;
+        document.write(민숙 + '<br>') //12
+
+        var 철수 = 5;
+        철수 = 철수 + 4;
+        document.write(철수 + '<br>') //9
+
+        var 철민 = 7;
+        철민 += 3;
+        document.write(철민 + '<br>') //철민 = 철민 + 3
+
+        var 철식 = 9;
+        //철식에게 9를 더해서 다시 철식이
+        철식 += 9;
+        document.write(철식 + '<br>') //18
+
+        var 일동 = 9;
+        일동 -= 3; //일동 = 일동 - 3;
+        document.write(일동 + '<br>') //6
+
+        var 이동 = 8;
+        이동--; //1빼기
+        document.write(이동 + '<br>')
+        
+
+    </script>
+
+
+    <script>
+        //var, let, const 키워드 (변수만들때 사용하는 키워드)
+        
+        var 삼동 = 3;
+        document.write(삼동 + "<br>")//3
+        삼동 = 4;
+        document.write(삼동 + "<br>")//4
+        var 삼동 = 30;
+        document.write(삼동 + "<br>")//30
+
+        let 사동 = 5;
+        //let 사동 = 6;//사동이가 이미 정의 되어 있다는 에러발생
+        사동 = 25;//다른 수를 할당해서 변수의 데이터를 변경하는 기능은 가능
+
+        let 육동;
+
+        const 오동=3.14;//(상수 변하지않는값)변수를 선언하자마자 값을할당
+        //오동 = 7; 다른값을 할당할수 없음
+        document.write(오동 + "<br>")
+        //*const(constant상수)키워드로 선언하는 변수는 데이터를 변경할수 없어서 
+        //변수라고 부르지 않고 상수라고(변하지 않는값)라고 부릅니다.
+        //var, let은 변수선언, const 상수선언
+
+        var 숙민 = 5;
+        
+        숙민++; //하나더하기
+        document.write(숙민 + '<br>') //6
+        
+        숙민 = 숙민 + 4;
+        document.write(숙민 + '<br>') //8
+
+        
+
+    </script>
+</body>
+
+</html>
