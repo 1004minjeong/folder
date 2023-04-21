@@ -49,6 +49,34 @@
         console.log(구일<팔일) //<--팔일이가 작으므로 false
         //== x>y --> x와 y가 크면 true
         console.log(구일>팔일) //<--구일이가 크므로 true
+        // "<=" x<=y x가 y보다 작거나 같은가
+        console.log(구일<=팔일)//false
+        
+        console.log(구일>=팔일)//true
+
+        //"=="은 숫자와 문자가 다르다는것을 모름
+        let 사일 = 4;
+        let 네일 = "4"; //<--- 네일 "4"는 문자이다
+        console.log(사일 == 네일)//true 
+        console.log(사일 != 네일)//false
+        // "===" 자료형까지 구별한다
+        //"==="은 숫자와 문자가 다르다는것을 인식
+        console.log(사일 === 네일)//false
+        // "!=" 느낌표는 다른것을 구별해서 다른게맞는상태가 맞으면 true
+        console.log(사일 !== 네일)
+
+        
+
+        //논리연산자
+        &&(AN연산자)/* 합집합:A와 B가 모두 true이면 true */
+       /*  ex) true && true ==> true
+        ex) true && false ==> false 둘중에 하나라도 false면 적히지않음
+        ex) false && true ==> false */
+
+        true && console.log("논리연산자 and")
+        false && console.log("false논리연산자 and") //적히지않음(false이기때문에)
+
+
 
 
 
