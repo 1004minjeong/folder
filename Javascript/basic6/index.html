@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = 30;
+        let str = "문자";
+        let blo = true;
+
+        //typeof : 변수에 저장되어 있는 데이터의 타입을 알수있다.
+        console.log(typeof num)//number
+        console.log(typeof str)//string("문자"라는뜻)
+        console.log(typeof (blo))//boolean(true와false의값만 가짐=참과거짓)
+        console.log(Boolean(1))//ture 
+        console.log(Boolean(77))//ture(0을제외한 숫자true=컴퓨터는 0과1만 알기때문에) 
+        console.log(Boolean(0))//false (0은 false)
+
+
+        let str1="문자";
+        let str2='문자';
+        //바깥쪽을 작은따옴표로 처리하였으면 안쪽은 큰 따옴표로 처리하고, 
+        //안쪽을 작은따옴표로 처리하였으면 바깥쪽은 큰따옴표로 처리.
+        let str3='문자는 "문자"다'
+        
+        console.log(str3)//문자는 "문자"다
+
+        let str4="문자는 '문자'다"
+        
+        console.log(str4)//문자는 '문자'다
+
+        let str5= "문자는\ '문자이다'";
+        console.log(str5)
+
+        //특수한 목적을 위해 '\'(역슬래시)문자로 사용하는 경우가 있는데,
+        //이것을 이스케이스 스퀀스(Escape Sequence)라고 한다.
+
+        // \n : 행바꿈
+        // \t : 탭문자(탭만큼 띄워쓰기)
+        // \\ : 역슬래시표현
+        // \' : 작은 다옴표
+        // \" : 큰 따옴표 
+
+        var str6 = "'you're too smart...\""
+        console.log(str6)
+
+        
+         
+
+    </script>
+    
+</body>
+</html>
