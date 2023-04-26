@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //if문
+        //날씨가 좋으면 등산을 간다
+        //날씨가 안좋으면 집에서 전을 먹을것이다
+
+        /*  if(조건문){
+            조건이 '참'일때의 실행문
+         }else{ 
+             조건이 '거짓'일때의 실행문
+         } */
+
+        let 날씨 = true;
+        if (날씨) {
+            console.log('등산을 간다')
+        } else {
+            console.log('집에서 전을 먹을것이다') //답은 true니까 '등산을간다'
+        }
+
+        let 나이 = 17;
+        if (나이 >= 18) {
+            console.log('성인')
+        } else {
+            console.log('청소년')
+        } //성인 나이가 18살 이니까 '성인' 18살 밑이면 '청소년'
+        //나이가 17살일때 '청소년'
+
+
+
+        //if(조건문a){조건문이 참일때의 실행문}
+        //else if(조건문b){
+        //조건문a는 만족하지 못한다.
+        //조건문b는 만족함}
+        //else if (조건문c){
+        //조건문a,b는 만족하지못함
+        //조건문c는 만족함}else{
+        //조건문a,b,c 모두 만족하지 못한 그 외에... }
+
+
+        let 성적 = 87;
+        if (성적 >= 90) {
+            console.log('우수학생입니다')
+        } else if (성적 >= 80) {
+            console.log('준우수학생입니다')
+        } else if (성적 >= 70) {
+            console.log('잘하고 있습니다.')
+        } else {
+            console.log('노력을 요합니다')
+        } //성적이 87점이므로 '준우수학생입니다.''
+
+
+        let age = prompt('나이를 입력하세요', '');
+        console.log(age)
+
+        var 입장료 = "";
+        if (age < 13 || age >= 65) {
+            입장료 = "2000원입니다."
+        } else if (age >= 13 && age < 20) {
+            입장료 = "3000원입니다."
+        } else {
+            입장료 = "4000원입니다."
+        }
+        console.log(입장료)
+
+
+
+        // 이중if문
+       /*  if (조건문A) {
+            if (조건문B) {
+                조건문A는 만족하는상태인데
+                조건문B는 만족하는가 ? 만족
+            } else {
+                조건문A는 만족인데
+                조건문B는 만족하는가 ? 만족안함
+            }
+        } else {조건문A를 만족하지 않을대 실행문
+
+        } */
+
+        var html = 30;
+        var css = 30;
+        var javaScript = 40;
+        var avg = (html+css+javaScript)/3;
+        
+        var 통보;
+
+        if(avg>=60){
+            if(html<40){
+                통보 = 'HTML 40점미만 불합격입니다.'
+            }else if(css<40){
+                통보 = 'CSS 40점미만 불합격입니다.'
+            }else if(javaScript<40){통보 = 'javaScript 40점미만 불합격입니다.'}
+
+        }else{
+            통보 = '평균' + avg + '점 불합격입니다.'
+        }
+        console.log(통보)
+    </script>
+
+</body>
+
+</html>
