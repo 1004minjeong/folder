@@ -42,6 +42,55 @@ let num =2;
                     console.log("그외의 숫자입니다")
         }
 
+        //-----------------------------
+
+        let 입장료 = prompt('아동, 청소년, 성인중 선택입력','');
+        
+        switch(입장료){
+            case "아동":
+                입장료 +=": 입장료 2000원";  //a(아동) += b(입장료 2000원)//a=a+b
+                break;
+                case "청소년": 
+                입장료 +=": 입장료 5000원";
+                case "성인":
+                break;
+                입장료 +=": 입장료 10000원";
+                break;
+                default:
+                입장료 = "입력을 다시 확인하세요";
+
+        }
+        console.log(입장료)
+
+
+        let day = new Date().getDay();
+        console.log(day)
+        switch (day){
+            case 0:   //0은일요일
+            document.write("일요일입니다.");
+            break;
+            case 1:day
+            document.write("월요일입니다.");
+            break;
+            case 2:day
+            document.write("화요일입니다.");
+            break;
+            case 3:day
+            document.write("수요일입니다.");
+            break;
+            case 4:day
+            document.write("목요일입니다.");
+            break;
+            case 5:day
+            document.write("금요일입니다.");
+            break;
+            case 6:day
+            document.write("토요일입니다.");
+            break;
+            default:
+                break;
+            }
+
     </script>
 </body>
 </html>
