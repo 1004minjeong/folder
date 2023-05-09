@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         //함수
         //함수는 하나의 실행문을 저장하고 변수는 하나의 데이터를 저장하여 사용.
         //함수는 스크립트 실행문을 보관하는 역할을 하기 때문에 반복사용되는 코드를 구조화 하거나 재활용을 목적으로 사용함.color
-        
+
         //함수에서 사용되는 용어
         //1.매개변수 : 함수에 자료를 넘기기 위한 변수
         //2.리턴값 : 함수를 실행하고 나오는 결과 값
@@ -20,27 +22,27 @@
 
 
 
-       //ex)
-       //for(let i=0; i<5; i++){
-            //document.write("이것은 빨간색"+i+"입니다") */
-           //document.write(`이것은 빨간색${i}입니다<br>`)}
+        //ex)
+        //for(let i=0; i<5; i++){
+        //document.write("이것은 빨간색"+i+"입니다") */
+        //document.write(`이것은 빨간색${i}입니다<br>`)}
 
-       /*  for(let i=0; i<5; i++){
-            document.write(`이것은 파란색${i}입니다<br>`)
-        }
+        /*  for(let i=0; i<5; i++){
+             document.write(`이것은 파란색${i}입니다<br>`)
+         }
 
-        for(let i=0; i<5; i++){
-            document.write(`이것은 초록색${i}입니다<br>`)
-        }  */
+         for(let i=0; i<5; i++){
+             document.write(`이것은 초록색${i}입니다<br>`)
+         }  */
 
 
-        function colorName(color){
-            for (let i = 0; i < 5; i++){
-                document.write("이것은"+ color + i + "입니다<br>")
+        function colorName(color) {
+            for (let i = 0; i < 5; i++) {
+                document.write("이것은" + color + i + "입니다<br>")
                 /* document.write(`이것은 ${color}${i}입니다<br>`) */
             }
         }
-        colorName("빨간색");//호출이라부름
+        colorName("빨간색"); //호출이라부름
         colorName("파란색");
         colorName("초록색");
 
@@ -49,15 +51,64 @@
         //가장 기본적으로 사용하는 함수의 형태.
         //기본적으로 함수는 함수이름을 설정하고 함수이름을 호출해야 실행이 됨.
         //ex) =방앗간이름을 선언함 컴퓨터 어디에서든 부르면 호출 가능 = 호이스팅
-        
+
         방앗간("송편")
 
-        function 방앗간(대야){
+        function 방앗간(대야) {
             console.log(대야 + "떡입니다.")
         }
         방앗간("쑥")
         방앗간("꿀")
         방앗간("무지개")
+
+
+
+
+
+        //두개의 동일한 함수가 있는경우에는 뒤에있는 함수가 호출됩니다.
+        function 샤넬미용실() {
+            document.write("머리를 해 드립니다.")
+        }
+
+        function 샤넬미용실() {
+            document.write("파마를 해 드립니다.")
+        }
+        샤넬미용실()
+
+
+        //이름이 없는 함수 (익명함수)
+        //함수에 이름이 없기떄문에 변수에 넣어서 사용하는 함수(호이스팅X=이름이없기때문에)
+        //ex)
+
+        //함수변수();//미리부를수없음
+
+        let 함수변수 = function () {
+            //실행코드
+            document.write("익명함수실행")
+        }
+
+        document.write("<br>")
+        함수변수();
+
+        //매개변수가 있는 함수
+        //변수를 통해 함수의 값을 전달하는 함수
+        //ex)
+
+        function 매개변수함수(매개변수1, 매개변수2) {
+            document.write(매개변수1+"와"+매개변수2)
+        }
+
+
+        매개변수함수("딸기", "바나나")
+
+
+        function 배달의민족(전화){
+            document.write(`여기는 ${전화} 입니다. 짜장면 2개 주세요`)
+        }
+        배달의민족(경성대)
     </script>
+
+
 </body>
+
 </html>
