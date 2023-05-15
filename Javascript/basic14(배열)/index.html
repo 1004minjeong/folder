@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic14</title>
+</head>
+<body>
+
+
+    <script>
+        //배열
+        let 음식 = ["짜짱면","짬뽕","치킨"];
+        //console.log(음식[1])//짬뿅
+        //음식[3]="탕수육";
+        //console.log(음식)//0:"짜짱면"1:"짬뽕"2:"치킨"3:"탕수육"
+        //음식[1]="잡채밥";
+        //console.log(음식)//0:"짜짱면"1:"잡채밥"2:"치킨"3:"탕수육"
+        //음식.push("밀면");
+       // console.log(음식);['짜짱면', '잡채밥', '치킨', '탕수육', '밀면']
+
+
+
+       for(let i=0; i< 음식.length; i++){
+       document.write(음식[i])}
+
+       음식.forEach(function(item){
+        //document.write(item+",")
+        document.write(item,",")
+       })
+    </script>
+    
+</body>
+</html>

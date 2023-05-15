@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic16</title>
+</head>
+
+<body>
+    <script>
+        //화살표함수
+        //화살표함수는 익명함수를 매우 간결하게 작성할때 사용하는 문법입니다.
+
+        var 함수 = function () {
+            console.log("함수가 실행되었습니다.")
+        }
+        함수(); //함수가 실행되었습니다.
+
+        var 화살표함수 = () => {
+            console.log("화살표함수가 실행되었습니다.")
+        }
+        화살표함수(); //화살표함수가 실행되었습니다.
+
+        let 화살리턴 = () => {
+            var str = "화살표리턴문입니다."
+            return str;
+        }
+        console.log(화살리턴()); //화살표리턴문입니다.
+
+        let 괄호함수 = (str2) => {
+            return str2;
+        }
+        let result = 괄호함수("괄호")
+        console.log(result) //괄호
+
+
+
+
+        //매개변수가 하나일때는 ()괄호를 생략할수있다.(그외에는 생략할수없다)
+        let 괄호생략 = str2 => {
+            return str2;
+        }
+        let result2 = 괄호생략("괄괄괄")
+        console.log(result2) //괄괄괄
+
+
+
+        //실행문이 한줄일때는 {}중괄호 생략
+        let 간략 = str => str;
+        let result3 = 간략("괄효")
+        console.log(result3) //괄효
+
+
+
+        let 합계 = (kor, eng) => kor + eng;
+
+        let 성적 = 합계(70, 80)
+        console.log(성적) //150
+    </script>
+
+
+
+    <script>
+      //삼항연산자
+
+      let age = 22;
+
+      //let 입장료 = age<17?true:false; age가 17세보다 작을때
+      let 입장료 = age<17?"3000원":"10000원";
+      console.log(입장료) //age가 10살이면 3000원, 22세이면 10000원
+
+
+    </script>
+</body>
+
+</html>
