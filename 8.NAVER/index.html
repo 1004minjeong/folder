@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAVER</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header">
+    <a href="#"><img src="img/NAVER_CI_Green.png" alt="logo" id="logo"></a>
+
+  </div><!-- hearder end -->
+
+  <div id="wrapper">
+    <div id="content">
+      <!-- id   -->
+      <div>
+        <h3 class="join_title">
+          <label for="id">아이디</label>
+        </h3>
+        <span class="box int_id">
+          <input type="text" id="id" class="int" maxlength="20">
+          <span class="step_url">@naver.com</span>
+        </span>
+        <span class="error_next_box e1">에러출력</span>
+      </div>
+      <!-- id end -->
+      <!-- pw -->
+      <div>
+        <h3 class="join_title">
+          <label for="psw1">비밀번호</label>
+        </h3>
+        <span class="box int_pass">
+          <input type="text" id="psw1" class="int" maxlength="16">
+          <span id="alertTxt">사용불가</span>
+          <img src="img/m_icon_pass.png" alt="비밀번호" id="pswd1_img1" class="paswdImg">
+        </span>
+        <span class="error_next_box e2">에러출력</span>
+      </div>
+      <!-- pw end -->
+
+      <!-- pw2 -->
+      <div>
+        <h3 class="join_title">
+          <label for="pswd2">비밀번호 재확인</label>
+        </h3>
+        <span class="box int_pass_check">
+          <input type="text" id="pswd2" class="int" maxlength="20">
+          <span id="alertTxt">사용불가</span>
+          <img src="img/m_icon_check_disable.png" alt="비밀번호" id="pswd2_img1" class="paswdImg">
+        </span>
+        <span class="error_next_box e3">에러출력</span>
+      </div>
+      <!-- pw2 end -->
+
+
+      <!-- name  -->
+      <div>
+        <h3 class="join_title">
+          <label for="name">이름</label>
+        </h3>
+        <span class="box int_name">
+          <input type="text" id="name" class="int" maxlength="20">
+        </span>
+        <span class="error_next_box e4"></span>
+      </div>
+      <!-- name end -->
+      
+     <!-- 생년월일 -->
+     <div>
+      <h3 class="join_title">
+        <label for="yy">생년월일</label>
+      </h3>
+      <div id="bir_wrap">
+        <!-- 생년 -->
+        <div id="bir_yy">
+          <div class="box">
+            <input type="text" id="yy" class="int" maxlength="4" placeholder="년(4)">
+          </div><!-- box end -->
+        </div><!-- bir_yy end -->
+        <!-- 생년 end-->
+        
+        <!-- 생월 -->
+        <div id="bir_mm">
+          <span class="box">
+             <select id="mm" class="sel">
+               <option>월</option>
+               <option value="01">1</option>
+               <option value="02">2</option>
+               <option value="03">3</option>
+               <option value="04">4</option>
+               <option value="05">5</option>
+               <option value="06">6</option>
+               <option value="07">7</option>
+               <option value="08">8</option>
+               <option value="09">9</option>
+               <option value="10">10</option>
+               <option value="11">11</option>
+               <option value="12">12</option>
+             </select>
+          </span>
+      </div><!-- bir_mm end -->
+        <!-- 생월 end-->
+        
+        <!-- 생일 -->
+        <div id="bir_dd">
+          <span class="box">
+            <input type="text" id="dd" class="int" maxlength="2" placeholder="일">
+          </span>
+        </div>
+        <!-- 생일 end-->
+      </div><!-- bir_wrap end -->
+      <span class="error_next_box 5">에러출력</span>
+     </div>
+     <!-- 생년월일 end -->
+
+    </div><!-- content end -->
+  </div><!-- wrapper end -->
+
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

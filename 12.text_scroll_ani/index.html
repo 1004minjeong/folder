@@ -52,9 +52,10 @@
         //console.log(arr)
 
         let count1 = 0;
-        //let count2 = 0;
+        let count2 = 0;
 
         initTexts(pTag1, textArr1)
+        initTexts(pTag2, textArr2)
 
         function initTexts(element, textArry) {
             textArry.push(...textArry) //8개의 배열에 동일한 배열을 복사하여 배열뒤에 넣음//16개
@@ -70,9 +71,11 @@
         function animate() {
             count1++;
             //console.log(count1)
+            count2++;
 
 
             count1 = marqueeText(count1, pTag1,-1)
+            count2 = marqueeText(count2, pTag2,1)
 
 
             window.requestAnimationFrame(animate)
@@ -89,10 +92,20 @@
             }
             element.style.transform=`translate(${count * direction}px,0)`
             return count;
-
         }
 
+
+            function scrollHandler(){
+                count1 += 25;
+                count2 += 25;
+            }
+
+        
+
+
         animate();
+
+        window.addEventListener("scroll",scrollHandler)
     </script>
 </body>
 

@@ -34,5 +34,7 @@ body{font-family: 'Heebo', sans-serif;
 }
 .cover:nth-child(2){
     margin-top: 20vh;
+    justify-content: flex-end;
+    
 }
 
