@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+/* font-family: 'Alfa Slab One', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 60px;
+    letter-spacing: 10px;
+}
+
+/* 사진주소 */
+/* https:
+
+ */
+.text {
+    position: fixed;
+    left: 30px;
+    top: 10px;
+    z-index: 500;
+}
+
+
+
+a {
+    color: #4a443d;
+    text-decoration: none
+}
+
+body {
+    overflow: auto;
+    height: 7600px;
+}
+
+#skrollr-body {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+#skrollr-body div {
+    overflow: hidden;
+    position: absolute;
+}
+
+.centered {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#wish1 {
+    background: url(img/035.jpg) center center no-repeat;
+    z-index: 5;
+    background-color: rgb(102, 000, 000)
+}
+
+#wish2 {
+    background: url(img/079.jpg) center bottom no-repeat;
+    z-index: 4;
+    box-shadow: 0 0 0 20px #050505;
+    background-color: rgb(204, 000, 000)
+}
+
+#snow {
+    width: 363px;
+    background: url(img/081.jpg) top center no-repeat
+}
+
+#pattern1 {
+    background: url(img/common.jpg);
+    z-index: 2;
+    background-attachment: fixed
+}
+
+
+
+svg {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    margin-left: -170px;
+    margin-top: -180px
+}
+
+#pattern2 {
+    background: url(img/django.png);
+    z-index: 1;
+}
+
+#wish3 {
+    background: #50dab5 url(img/035.jpg) no-repeat center center;
+    z-index: 6;
+    border-radius: 50%;
+}
