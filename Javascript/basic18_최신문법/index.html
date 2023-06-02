@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //객체:관련된 정보를 묶어서 하나의 데이터로 저장을 하게 해준다.
+    let patient = {
+      //key:key-value
+      name: "홍길동",
+      age: 17,
+      disease: "cold",
+    };
+    console.log(patient);
+    console.log(patient.age); //17
+    console.log(patient["age"]); //17
+    patient.name = "박말자";
+    console.log(patient); //{name: '박말자', age: 17, disease: 'cold'}
+    patient["age"] = 25;
+    console.log(patient); //{name: '박말자', age: 25, disease: 'cold'}
+
+    let patientList = [{
+        name: "박놀부",
+        age: 13
+      },
+      {
+        name: "박훙부",
+        age: 12
+      },
+      {
+        name: "박제비",
+        age: 30
+      },
+    ];
+    console.log(patientList);
+    console.log("두번째환자", patientList[1]); //박훙부 12
+    console.log("두번째환자의이름은", patientList[1].name); //두번쨰환자의 이름은 박훙부
+    console.log("두번째환자의이름은", patientList[1]["name"]); //두번쨰환자의 이름은 박흥부
+    console.log("두번째환자의이름은", patientList[2]["name"]); //두번쨰환자의 이름은 박제비
+    console.log("두번째환자", patientList[1]["age"]); //두번쨰환자 12
+    console.log("두번째환자의나이는", patientList[1].age); //두번쨰환자의 나이는 12
+
+
+    //배열
+    let 남학생1 = "노상재";
+    let 남학생2 = "허영규";
+    let 남학생3 = "서호준";
+    let 남학생4 = "서강준";
+    let 남학생5 = "김민석";
+
+    let 우리반남학생 = ["노상재", "허영규", "서호준", "서강준", "연우진"] //(5) ['노상재', '허영규', '서호준', '서강준', '연우진']
+    console.log(우리반남학생)
+    console.log(우리반남학생[3]) //서강준
+    console.log(우리반남학생[4]) //연우진
+
+    우리반남학생[3] = "박서준"
+    console.log(우리반남학생) //(5) ['노상재', '허영규', '서호준', '박서준', '연우진']
+
+    //배열과 함께쓰는 함수
+    우리반남학생.pop(); //마지막요소를 빼낸다.
+    console.log(우리반남학생) //(4) ['노상재', '허영규', '서호준', '박서준']
+
+    우리반남학생.push("지디")
+    console.log(우리반남학생) //(5) ['노상재', '허영규', '서호준', '박서준', '지디']
+
+    //includes():해당 아이템을 배열이 포함하고 있는지 알랴줌(답은 True / false 둘중에하나임)
+    console.log(우리반남학생.includes("서호준")) //true
+    console.log(우리반남학생.indexOf("서호준")) //2(0부터 시작해서 2번임)
+    console.log(우리반남학생.includes("야호")) //false
+
+
+    //slice(시작점 ex3번부터시작해서): 3번이상
+    console.log(우리반남학생.slice(3)) //(2) ['박서준', '지디']
+    //slice(1,3) 1이상 3미만
+    console.log(우리반남학생.slice(1, 3)) //(2) ['허영규', '서호준']
+    console.log(우리반남학생)//(5) ['노상재', '허영규', '서호준', '박서준', '지디']
+
+
+    //splice index 3번부터 2개를 잘라낸다
+    console.log(우리반남학생.splice(3,2))//(2) ['박서준', '지디']
+    console.log(우리반남학생)
+  </script>
+</body>
+
+</html>

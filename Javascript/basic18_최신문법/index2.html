@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* let name="홍길동"
+        let age="18"
+
+        //let person={name:name, age:age}
+        let person={name,age}//키값과 변수이름이 같다면 줄일수있다.
+        console.log(person)
+
+        let person2={nameValue:name, ageValue:age};//키값과 변수이름이 다르면 줄일수없다.
+        console.log(person2.nameValue) //홍길동 */
+
+        //객체를 분해하는 과정
+       // let 우리반여학생1={
+       //     name:"곰민정",
+       //     age:20
+       // }
+        //객체를 변수로 분리하고자할때 
+        /* let name=우리반여학생1.name;
+        let age=우리반여학생1.age;
+        console.log(name,age) *///곰민정 20
+
+        //위에 두줄과 아래줄은 동일
+        //let {name,age}=우리반여학생1;
+        //console.log(name,age) //곰민정 20
+
+       /*  let nameDiff=우리반여학생1.name;
+        let ageDiff=우리반여학생1.age; */
+
+       // let {nameDiff,ageDiff}=우리반여학생1;
+        //console.log(nameDiff,ageDiff)//undefined undefined
+
+        //배열을 변수에담기 = 구조분해문법
+        let array=[1,2,3];
+       /*  let one=array[0]
+        let two=array[1]
+        let Three=array[2] */
+        //1 2 3 
+
+        //위에 3줄과 아래의 내용이 동일
+        let[one,two,three]=array;//1 2 3
+        console.log(one,two,three)
+
+        let [a,...rest]=array;
+        //console.log(a, rest)//1 > (2) [2, 3]
+        let [,...rest2]=array;
+        console.log(rest2)// >(2) [2, 3]
+
+        let 사람={
+            name:"박지은",
+            age:18,
+            run:true
+        }
+        //let {name,age,run}=사람;
+        let {name,...rest3}=사람;
+        console.log(name, rest3);//이름은 변수 nm로 받고 나머지 객체는 묶인다.박지은 {age: 18, run: true}
+    </script>
+</body>
+</html>
